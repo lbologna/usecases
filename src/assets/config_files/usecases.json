@@ -1362,7 +1362,7 @@
         "dataprotected": false,
         "files": [
           {
-            "entryname": "CxSystem2 GUI",
+            "entryname": "CxSystem2",
             "appid": 440,
             "contenttype": "text/html",
             "extension": ".html"
