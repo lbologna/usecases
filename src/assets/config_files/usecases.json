@@ -358,7 +358,7 @@
         "description": "A simple example use case of how to use KappaNEURON for a calcium pump",
         "experience": ["all"],
         "maturity": ["beta"],
-        "disabled": false,
+        "disabled": true,
         "type": "ipynb",
         "contributors": [
           {"name": "David C Sterratt", "email": "david.c.sterratt@ed.ac.uk"}
@@ -678,7 +678,7 @@
             "appid": 175,
             "contenttype": "x-ipynb+json",
             "extension": ".ipynb",
-            "file": "f0889ca5-735d-4857-98e7-fb2e5630d503",
+            "file": "4c689aae-0655-4dda-aa8f-bd5c5e4bfb48",
             "file_prod": "https://api.github.com/repos/antonelepfl/usecases/contents/production_notebooks/singlecellmodeling/BuildOwn%20Single%20HippoCell%20-%20Config.ipynb?ref=master"
           },
           {
@@ -686,7 +686,7 @@
             "appid": 175,
             "contenttype": "x-ipynb+json",
             "extension": ".ipynb",
-            "file": "66970e4e-8879-4f05-b669-d37c7bb69788",
+            "file": "a6ae229e-1f5d-492d-a4fc-e61fcb4948ad",
             "file_prod": "https://api.github.com/repos/antonelepfl/usecases/contents/production_notebooks/singlecellmodeling/BuildOwn%20Single%20HippoCell%20-%20Analysis.ipynb?ref=master"
           },
           {
@@ -694,7 +694,7 @@
             "appid": 175,
             "contenttype": "x-ipynb+json",
             "extension": ".ipynb",
-            "file": "d4737dd8-1576-4f8d-ba4d-06b9e2c30ef7",
+            "file": "56a85712-7102-4864-86b4-274ced3755e8",
             "file_prod": "https://api.github.com/repos/antonelepfl/usecases/contents/production_notebooks/singlecellmodeling/BuildOwn%20Single%20HippoCell%20-%20NSG%20Job%20Manager.ipynb?ref=master"
           }
         ]
@@ -902,7 +902,7 @@
           {"name": "Carmen Alina Lupascu", "email": "carmen.lupascu@pa.ibf.cnr.it"}
         ],
         "picture": {
-          "src": "https://raw.githubusercontent.com/antonelepfl/usecases/dev/src/assets/images/Plasticity.png"
+          "src": "https://raw.githubusercontent.com/antonelepfl/usecases/dev/src/assets/images/Plasticity2.png"
         },
         "next": "sc_models",
         "files": [
@@ -1372,6 +1372,32 @@
         ]
       },
       {
+        "title": "Configure and run a simplified cortical circuit with the CxSystem2 simulation framework",
+        "description": "",
+        "experience": ["experts"],
+        "maturity": ["beta"],
+        "disabled": false,
+        "type": "webapp",
+        "contributors": [
+          {"name": "Vafa Andalibi", "email": "vafandal@indiana.edu"},
+          {"name": "Henri Hokkanen", "email": "henri.hokkanen@helsinki.fi"},
+          {"name": "Simo Vanni", "email": "simo.vanni@helsinki.fi"}
+        ],
+        "picture": {
+          "src": "https://raw.githubusercontent.com/antonelepfl/usecases/dev/src/assets/images/cxsys2.png"
+        },
+        "next": "ta_form",
+        "dataprotected": false,
+        "files": [
+          {
+            "entryname": "CxSystem2",
+            "appid": 440,
+            "contenttype": "text/html",
+            "extension": ".html"
+          }
+        ]
+      },
+      {
         "title": "Configure and run a small circuit using HBP model and data",
         "description": "",
         "experience": ["power"],
@@ -1492,6 +1518,59 @@
               {"name": "Elisa Marenzi", "email": "elisa.marenzi@unipv.it"}
             ],
             "img": "https://github.com/antonelepfl/usecases/raw/dev/src/assets/images/cerebellum.png"
+          }
+        ]
+      },
+      {
+        "title": "Cerebro-Cerebellar loops",
+        "description": "This use-case shows a modeling effort of whole brain functionalities by leveraging on the existing cerebellar models. We model and simulate the forward and inverse controller functions of the cerebrocortical-cerebellar loops in a closed-loop setting, emulating error-based learning and action prediction.",
+        "experience": ["experts"],
+        "disabled": false,
+        "type": "ipynb",
+        "picture": {
+          "src": "https://github.com/antonelepfl/usecases/raw/dev/src/assets/images/cerebellum.png"
+        },
+        "next": "brainarea_circuits",
+        "models": [
+          {
+            "title": "Cerebro-cerebellar closed-loop experiment",
+            "files": [
+              {
+                "entryname": "Step 1 - Preparation of the environment",
+                "appid": 175,
+                "contenttype": "x-ipynb+json",
+                "extension": ".ipynb",
+                "file": "2baba0b8-e798-4882-a833-9d2801211f36",
+                "file_prod": ""
+              },
+              {
+                "entryname": "Step 2 - Calibration",
+                "appid": 175,
+                "contenttype": "x-ipynb+json",
+                "extension": ".ipynb",
+                "file": "d234f52d-a5a1-43a1-b806-d3cf4897efe2",
+                "file_prod": ""
+              },
+              {
+                "entryname": "Step 3 - Simulation",
+                "appid": 175,
+                "contenttype": "x-ipynb+json",
+                "extension": ".ipynb",
+                "file": "08420796-68f6-4445-9ff7-5bae0dd5f7d5",
+                "file_prod": ""
+              }
+            ],
+            "species": "Mouse",
+            "brain_structure": "cerebellum",
+            "cell_soma_location": "cerebellar cortex, Deep Cerebellar Nuclei and Inferior Olive",
+            "description": "Cortico-Cerebellum microcircuit simulation with PyNEST",
+            "contributors": [
+              {"name": "Alberto Antonietti", "email": "alberto.antonietti@unipv.it"},
+              {"name": "Edoardo Negri", "email": "edoardo.negri@unipv.it"},
+              {"name": "Claudia Casellato", "email": "claudia.casellato@unipv.it"},
+              {"name": "Egidio D’Angelo", "email": "egidiougo.dangelo@unipv.it"}
+            ],
+            "img": "https://github.com/antonelepfl/usecases/raw/dev/src/assets/images/cerebrocerebellar_loop.png"
           }
         ]
       }
