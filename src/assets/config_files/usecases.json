@@ -358,7 +358,7 @@
         "description": "A simple example use case of how to use KappaNEURON for a calcium pump",
         "experience": ["all"],
         "maturity": ["beta"],
-        "disabled": false,
+        "disabled": true,
         "type": "ipynb",
         "contributors": [
           {"name": "David C Sterratt", "email": "david.c.sterratt@ed.ac.uk"}
@@ -1518,6 +1518,82 @@
               {"name": "Elisa Marenzi", "email": "elisa.marenzi@unipv.it"}
             ],
             "img": "https://github.com/antonelepfl/usecases/raw/dev/src/assets/images/cerebellum.png"
+          },
+          {
+            "title": "Functional Simulation with Advanced Point Neurons (E-GLIF)",
+            "files": [
+              {
+                "entryname": "Olivo-Cerebellar microcircuit",
+                "appid": 175,
+                "contenttype": "x-ipynb+json",
+                "extension": ".ipynb",
+                "file": "39810378-34f4-4e7f-95a7-b1f347b600c4",
+                "file_prod": ""
+              }
+            ],
+            "species": "Mouse",
+            "brain_structure": "cerebellum",
+            "cell_soma_location": "cerebellar cortex, Deep Cerebellar Nuclei and Inferior Olive",
+            "description": "Olivocerebellar microcircuit simulation with E-GLIF point neurons in PyNEST",
+            "contributors": [
+              {"name": "Alice Geminiani", "email": "alice.geminiani@unipv.it"},
+              {"name": "Claudia Casellato", "email": "claudia.casellato@unipv.it"},
+              {"name": "Egidio d’Angelo", "email": "egidiougo.dangelo@unipv.it"}
+            ],
+            "img": "https://github.com/antonelepfl/usecases/raw/dev/src/assets/images/use_case_olivocereb_icon.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Cerebro-Cerebellar loops",
+        "description": "This use-case shows a modeling effort of whole brain functionalities by leveraging on the existing cerebellar models. We model and simulate the forward and inverse controller functions of the cerebrocortical-cerebellar loops in a closed-loop setting, emulating error-based learning and action prediction.",
+        "experience": ["experts"],
+        "disabled": false,
+        "type": "ipynb",
+        "picture": {
+          "src": "https://github.com/antonelepfl/usecases/raw/dev/src/assets/images/cerebro-cerebellar-loops.png"
+        },
+        "next": "brainarea_circuits",
+        "models": [
+          {
+            "title": "Cerebro-cerebellar closed-loop experiment",
+            "files": [
+              {
+                "entryname": "Step 1 - Preparation of the environment",
+                "appid": 175,
+                "contenttype": "x-ipynb+json",
+                "extension": ".ipynb",
+                "file": "2baba0b8-e798-4882-a833-9d2801211f36",
+                "file_prod": ""
+              },
+              {
+                "entryname": "Step 2 - Calibration",
+                "appid": 175,
+                "contenttype": "x-ipynb+json",
+                "extension": ".ipynb",
+                "file": "d234f52d-a5a1-43a1-b806-d3cf4897efe2",
+                "file_prod": ""
+              },
+              {
+                "entryname": "Step 3 - Simulation",
+                "appid": 175,
+                "contenttype": "x-ipynb+json",
+                "extension": ".ipynb",
+                "file": "08420796-68f6-4445-9ff7-5bae0dd5f7d5",
+                "file_prod": ""
+              }
+            ],
+            "species": "Mouse",
+            "brain_structure": "cerebellum",
+            "cell_soma_location": "cerebellar cortex, Deep Cerebellar Nuclei and Inferior Olive",
+            "description": "Cortico-Cerebellum microcircuit simulation with PyNEST",
+            "contributors": [
+              {"name": "Alberto Antonietti", "email": "alberto.antonietti@unipv.it"},
+              {"name": "Edoardo Negri", "email": "edoardo.negri@unipv.it"},
+              {"name": "Claudia Casellato", "email": "claudia.casellato@unipv.it"},
+              {"name": "Egidio D’Angelo", "email": "egidiougo.dangelo@unipv.it"}
+            ],
+            "img": "https://github.com/antonelepfl/usecases/raw/dev/src/assets/images/cerebrocerebellar_loop.png"
           }
         ]
       }
